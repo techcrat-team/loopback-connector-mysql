@@ -1,0 +1,38 @@
+{
+  "name": "loopback-connector-mysql",
+  "version": "5.2.0",
+  "description": "MySQL connector for loopback-datasource-juggler",
+  "engines": {
+    "node": ">=4"
+  },
+  "main": "index.js",
+  "scripts": {
+    "pretest": "node pretest.js",
+    "lint": "eslint .",
+    "test": "mocha --timeout 10000 --require test/init.js test/*.js",
+    "posttest": "npm run lint"
+  },
+  "dependencies": {
+    "async": "^0.9.0",
+    "debug": "^3.1.0",
+    "lodash": "^4.17.4",
+    "loopback-connector": "git+ssh://git@github.com/techcrat-team/loopback-connector.git",
+    "mysql": "^2.11.1",
+    "strong-globalize": "^3.1.0"
+  },
+  "devDependencies": {
+    "bluebird": "~2.9.10",
+    "eslint": "^4.3.0",
+    "eslint-config-loopback": "^8.0.0",
+    "loopback-datasource-juggler": "^3.0.0",
+    "mocha": "^2.1.0",
+    "rc": "^1.0.0",
+    "should": "^8.0.2",
+    "sinon": "^1.15.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/strongloop/loopback-connector-mysql.git"
+  },
+  "license": "MIT"
+}
